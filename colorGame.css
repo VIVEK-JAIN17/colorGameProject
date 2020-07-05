@@ -2,15 +2,9 @@ body{
     margin: 0;
     padding: 0;
     background-color: #222;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-}
-
-@media all and (min-width: 768px){
-    body{
-        font-size: 18px;
-    }
 }
 
 header{
@@ -91,3 +85,4 @@ div.square{
     visibility: visible;
     transition: background 400ms ease-out 0s;
 }
+
