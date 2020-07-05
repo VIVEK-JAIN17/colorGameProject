@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="colorGame.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon1.png" type="image/png">
+    <title>Color Game Project</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>the great <br> <span id="selectedColor">rgb(255, 255, 255)</span> <br> guessing Game</h1>
+    </header>
+    <div class="navbar">
+        <button class="new">new colors</button>
+        <span class="space"></span>
+        <button id="easy" class="mode">easy</button>
+        <button id="hard" class="mode active">hard</button>
+    </div>
+
+    <div class="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="colorGame.js"></script>
+</body>
+
+</html>
