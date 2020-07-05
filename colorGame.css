@@ -15,7 +15,7 @@ header{
     padding-bottom: 10px;
     text-align: center;
     background-color: #256497;
-    font-size: 1.3rem;
+    font-size: 1rem;
     letter-spacing: 0.3rem;
     word-spacing: 0.5rem;
     transition: background 400ms linear 0s;
@@ -29,14 +29,15 @@ h1{
 
 header span{
     display: inline-block;
-    font-size: 5rem;
+    font-size: 2rem;
     margin: 20px 0;
 }
 
 div.navbar{
-    height: 35px;
+    min-height: 35px;
     background-color: #fff;
     color: #256497;
+    font-size: 0.8rem;
     font-weight: 600;
     text-align: center;
     margin: 0 auto;
@@ -51,14 +52,15 @@ button{
     background: transparent;
     text-transform: uppercase;
     border: none;
+    width: max-content;
     height: 35px;
     color: #256497;
     line-height: 35px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     outline: none;
     cursor: pointer;
-    padding: 0 15px;
+    padding: 0 5px;
     margin: 0 -3px;
 }
 
@@ -72,17 +74,49 @@ button:hover, .active{
     margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 div.square{
-    display: inline-block;
-    margin: 1.66%;
-    width: 30%;
-    height: 30%;
+    margin: 2.66%;
+    width: 28%;
+    height: 180px;
     border-radius: 25px;
     background-color: aquamarine;
-    visibility: visible;
     transition: background 400ms ease-out 0s;
 }
 
+@media all and (min-width: 768px){
+    header{
+        font-size: 1.3rem;
+    }
+
+    header span{
+        font-size: 5rem;
+    }
+
+    div.navbar{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .space{
+        display: inline-block;
+        min-width: 35%;
+    }
+
+    button{
+        padding: 0 15px;
+        font-size: 1.1rem;
+    }
+
+    .container{
+        max-width: 650px;
+    }
+
+    div.square{
+        width: 30%;
+        margin: 1.66%;
+        height: 180px;
+    }
+}
